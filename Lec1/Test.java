@@ -8,5 +8,5 @@ public class Test {
 		System.out.print("Wlecome to Coding Blocks");
 		System.out.println("Bye");
 
-	}
+    }
 }
