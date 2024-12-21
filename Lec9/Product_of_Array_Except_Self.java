@@ -26,7 +26,7 @@ public class Product_of_Array_Except_Self {
 		}
 		for (int i = 0; i < right.length; i++) {
 			left[i]=left[i]*right[i];
-		}
+		} 
 		return left;
 	}
 }

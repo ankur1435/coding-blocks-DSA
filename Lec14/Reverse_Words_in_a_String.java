@@ -17,7 +17,7 @@ public class Reverse_Words_in_a_String {
 		// System.out.println(Arrays.toString(arr));
 		String ans = "";
 		for (int i = arr.length - 1; i >= 0; i--) {
-			ans = ans + arr[i]+" ";
+			ans = ans + arr[i] + " ";
 		}
 		return ans.trim();
 

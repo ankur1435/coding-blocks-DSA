@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Generate_Parentheses {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		// TODO Auto-generated method stub
 		int n = 3;
 		List<String> ll = new ArrayList<>();
@@ -13,17 +13,20 @@ public class Generate_Parentheses {
 	}
 
 	public static void Parentheses(int n, int open, int closed, String ans, List<String> ll) {
-		if (open == n && closed == n) {
+		if (open == n && closed == open) {
 			// System.out.println(ans);
 			ll.add(ans);
 			return;
 		}
-		if (open > n || closed > open) {
-			return;
+		// if (open > n || closed > n) {
+		// 	return;
+		// }
+        if (open < n) {
+		    Parentheses(n, open + 1, closed, ans + "(", ll);
 		}
-
-		Parentheses(n, open + 1, closed, ans + "(", ll);
-		Parentheses(n, open, closed + 1, ans + ")", ll);
+		if (closed < open) {
+		    Parentheses(n, open, closed + 1, ans + ")", ll);			
+		}
 	}
 
 }

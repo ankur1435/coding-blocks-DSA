@@ -14,17 +14,14 @@ public class Count_Primes {
 		System.out.println(c);
 
 	}
-
+ 
 	public static boolean isprime(int n) {
-		int div = 2;
-		while (div * div <= n) {
-			if (n % div == 0) {
-				return false;
-			}
-
-			div++;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+		if (n % i == 0) {
+			return false;
 		}
-		return true;
+	 }
+	 return true;
 	}
 
 }

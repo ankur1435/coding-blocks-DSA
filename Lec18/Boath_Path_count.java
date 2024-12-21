@@ -17,12 +17,14 @@ public class Boath_Path_count {
 		if (curr > n) {
 			return 0;
 		}
-		int sum = 0;
-		for (int dice = 1; dice <= 3; dice++) {
-			sum += Count(n, ans + dice, curr + dice);
-		}
-
-		return sum;
+		// int sum = 0;
+		// for (int dice = 1; dice <= 3; dice++) {
+		// 	sum += Count(n, ans + dice, curr + dice);
+		// }
+        int a = Count(n, ans + 1, curr + 1);
+		int b = Count(n, ans + 2, curr + 2);
+		int c = Count(n, ans + 3, curr + 3);
+		return a + b + c;
 	}
 
 }

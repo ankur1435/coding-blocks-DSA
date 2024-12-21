@@ -7,7 +7,7 @@ public class ArraysList_Demo2 {
 		// TODO Auto-generated method stub
 		ArrayList<Integer> ll = new ArrayList<>();
 		// add
-		ll.add(10);
+		ll.add(10); 
 		ll.add(20);
 		ll.add(78);
 		ll.add(5);
@@ -22,9 +22,8 @@ public class ArraysList_Demo2 {
 		}
 		System.out.println();
 		boolean[] arr = new boolean[5];
-		for (int x : ll) {
-			System.out.print(x + " ");
-			
+		for (int x :ll) {
+			System.out.print(x + " ");			
 		}
 		System.out.println();
 		for (boolean x : arr) {

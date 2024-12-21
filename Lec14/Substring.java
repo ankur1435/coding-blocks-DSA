@@ -6,8 +6,8 @@ public class Substring {
 		// TODO Auto-generated method stub
 		String s = "codingblocks";
 		// System.out.println(s.substring(2, 7));
-		System.out.println(s.substring(2));
-		// printallsubstring(s);
+		// System.out.println(s.substring(2,6));
+		printallsubstring(s);
 	}
 
 	public static void printallsubstring(String s) {

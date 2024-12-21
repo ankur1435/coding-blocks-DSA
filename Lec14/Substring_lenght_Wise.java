@@ -7,7 +7,7 @@ public class Substring_lenght_Wise {
 		String s = "codingblocks";
 		printallsubstring(s);
 	}
-
+ 
 	public static void printallsubstring(String s) {
 		for (int len = 1; len <= s.length(); len++) {
 			for (int j = len; j <= s.length(); j++) {

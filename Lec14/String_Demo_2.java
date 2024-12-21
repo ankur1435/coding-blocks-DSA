@@ -14,9 +14,10 @@ public class String_Demo_2 {
 		int a2 = 9;
 		System.out.println(a1 == a2);
 		int len = s1.length();
+		System.out.println(len);
 		int[] arr = new int[4];
 		int l = arr.length;
-
+        System.out.println(l);
 	}
 
 }
