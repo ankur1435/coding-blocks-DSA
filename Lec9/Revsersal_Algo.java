@@ -17,11 +17,11 @@ public class Revsersal_Algo {
 		int n = arr.length;
 		k = k % n;
 		// 1. reverse starting ke n-k element
-		Reverse(arr, 0, n - k - 1);
+		Reverse(arr, 0, n - 1 - k);// reverse this because we want to reverse the array from 0 to end and uske karan elements idhar udhar ho jayenge
 		// 2. last ke K element
-		Reverse(arr, n - k, n - 1);
+		Reverse(arr, k + 1, n - 1);// reverse this because k+1 se n-1 tak ke elements ko aage se dikhana hai aur agar reverse nahi karenge toh ulta dikhayega
 		// 3. all element
-		Reverse(arr, 0, n - 1);
+		Reverse(arr, 0, n - 1);// apne second call ko dikhane ke liye ye call karna jaruri hai nahi to pichhe se dikhayega aur ye call kar rahe h issiliye pahle wala kar diye the taaki ye call karne ke baad sahi se dikhaye
 
 	}
 

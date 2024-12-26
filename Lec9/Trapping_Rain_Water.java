@@ -9,7 +9,7 @@ public class Trapping_Rain_Water {
 
 	}
 
-	public static int Trapping(int[] arr) {
+	public static int Trapping(int[] arr) { 
 		int n = arr.length;
 		int[] left = new int[n];
 		left[0] = arr[0];

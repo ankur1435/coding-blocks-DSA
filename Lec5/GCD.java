@@ -4,8 +4,8 @@ public class GCD {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int dividend = 36;
-		int divisor = 60;
+		int dividend = 40;
+		int divisor = 12;
 		while (dividend % divisor != 0) {
 			int rem = dividend % divisor;
 			dividend = divisor;

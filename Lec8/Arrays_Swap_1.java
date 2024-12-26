@@ -7,11 +7,19 @@ public class Arrays_Swap_1 {
 		int[] arr = { 2, 3, 1, 7, 9 };
 		// int[] arr1 = new int[]{ 2, 3, 1, 7, 9 };
 		System.out.println(arr[0] + " " + arr[1]);
-		swap(arr[0], arr[1]);
+		SwapByReference(arr,0, 1);
 		System.out.println(arr[0] + " " + arr[1]);
 	}
 
-	public static void swap(int a, int b) {
+    // call by reference
+	public static void SwapByReference(int arr[],int i, int j) {
+		int temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+	}
+
+	// call by value
+	public static void SwapByValue(int a, int b) {
 		int temp = a;
 		a = b;
 		b = temp;

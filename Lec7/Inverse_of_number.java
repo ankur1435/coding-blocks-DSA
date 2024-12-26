@@ -11,6 +11,7 @@ public class Inverse_of_number {
 			int rem = n % 10;
 			sum = sum + (int) (place * Math.pow(10, rem - 1));
 			n = n / 10;
+			// the use of place is to keep track of the position of the digit in the original number
 			place++;
 		}
 		System.out.println(sum);

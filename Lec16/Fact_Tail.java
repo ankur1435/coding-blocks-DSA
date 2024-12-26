@@ -10,7 +10,7 @@ public class Fact_Tail {
 	}
 
 	public static int fac(int n,int ans) {
-		if (n == 0) {
+		if (n == 0) { 
 			return ans;
 		}
 		return fac(n - 1,ans*n);

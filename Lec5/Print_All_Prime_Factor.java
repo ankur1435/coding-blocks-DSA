@@ -9,7 +9,7 @@ public class Print_All_Prime_Factor {
 		while(i<=n) {
 			if(n%i==0) {
 				System.out.println(i);
-				n=n/i;
+				n /= i;
 			}
 			else {
 				i++;
