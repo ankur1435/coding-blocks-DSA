@@ -14,7 +14,7 @@ public class Majority_Element {
 		for (int i = 1; i < arr.length; i++) {
 			if (arr[i] == e) {
 				vote++;
-			} else {
+			} else { 
 				vote--;
 			}
 			if (vote == 0) {

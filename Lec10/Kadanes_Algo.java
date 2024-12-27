@@ -1,7 +1,7 @@
 package Lec10;
 
 public class Kadanes_Algo {
-
+ 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
@@ -23,3 +23,5 @@ public class Kadanes_Algo {
 	}
 
 }
+
+// many thing would be useless if array is only filled up with positive numbers like if case

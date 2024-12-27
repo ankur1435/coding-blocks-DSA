@@ -22,4 +22,4 @@ public class Binary_Search {
 		}
 		return -1;
 	}
-}
+} 

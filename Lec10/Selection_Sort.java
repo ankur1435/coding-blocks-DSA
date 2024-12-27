@@ -29,7 +29,7 @@ public class Selection_Sort {
 				mini = i;
 			}
 		}
-		return mini;
+		return mini; 
 
 	}
 

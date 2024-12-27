@@ -9,7 +9,7 @@ public class Kth_root {
 		System.out.println(KthRoot(n, k));
 
 	}
-
+ 
 	public static int KthRoot(int n, int k) {
 		int lo = 1;
 		int hi = n;
