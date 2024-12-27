@@ -6,7 +6,6 @@ public class StudentClient {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		ArrayList<Integer> ll = new ArrayList<>();
 		System.out.println("Welcome ");
 		Student s = new Student();
 		s.name = "kaju";
@@ -18,6 +17,7 @@ public class StudentClient {
 		s1.Intro_yourSelf();
 		s.SayHey("Ramesh");
 		System.out.println(s.MentorName());
+		// static functions can be called by class not need of objects
 		System.out.println(Student.MentorName());
 
 	}
@@ -25,4 +25,4 @@ public class StudentClient {
 		System.out.println("I am in Static  Block Main");
 	}
 
-}
+} 

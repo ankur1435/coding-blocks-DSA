@@ -17,6 +17,7 @@ public class Tranpose_Matrix {
 	public static void Tranpose(int[][] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i + 1; j < arr[0].length; j++) {
+				// The reason int j = i + 1; is used instead of int j = 0; in the transposition method is to avoid swapping elements that have already been swapped.
 				int temp = arr[i][j];
 				arr[i][j] = arr[j][i];
 				arr[j][i] = temp;

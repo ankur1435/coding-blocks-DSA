@@ -16,7 +16,7 @@ public class Student {
 		System.out.println(this.name + " Say hello " + name);
 
 	}
-
+ 
 	public static String MentorName() {
 		return "Monu Bhaiya";
 	}
@@ -28,3 +28,5 @@ public class Student {
 		System.out.println("I am in Static  Block1");
 	}
 }
+
+// Static methods belong to the class, not to any particular object.
