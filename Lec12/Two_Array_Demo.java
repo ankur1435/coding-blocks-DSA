@@ -13,6 +13,7 @@ public class Two_Array_Demo {
 		System.out.println(arr[0]);
 		System.out.println(arr[0][2]);
 		int[][] other = arr;
+		System.out.println(other);
 
 	}
 

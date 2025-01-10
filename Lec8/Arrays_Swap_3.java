@@ -13,6 +13,7 @@ public class Arrays_Swap_3 {
 
 	public static void Swap(int[] arr, int[] other) {
 		// TODO Auto-generated method stub
+		// temp will only store the address of arr not value
 		int[] temp = arr;
 		arr = other;
 		other = temp;

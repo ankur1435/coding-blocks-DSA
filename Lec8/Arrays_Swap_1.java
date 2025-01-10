@@ -7,7 +7,7 @@ public class Arrays_Swap_1 {
 		int[] arr = { 2, 3, 1, 7, 9 };
 		// int[] arr1 = new int[]{ 2, 3, 1, 7, 9 };
 		System.out.println(arr[0] + " " + arr[1]);
-		SwapByReference(arr,0, 1);
+		SwapByReference(arr, 0, 1); 
 		System.out.println(arr[0] + " " + arr[1]);
 	}
 
@@ -25,3 +25,6 @@ public class Arrays_Swap_1 {
 		b = temp;
 	}
 }
+
+// Call by Value: A copy of the actual data is passed to the function, so any changes made inside the function do not affect the original data.
+// Call by Reference: The actual reference (memory address) of the data is passed, so changes made inside the function will affect the original data.

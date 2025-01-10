@@ -35,6 +35,9 @@ public class Wrapper_Class_Demo {
 	}
 
 }
+// Java caches Integer objects for values between -128 and 127. 
+// The Long class caches values between -128 and 127, similar to Integer
+// No caching for Double or Float values.
 
 
 

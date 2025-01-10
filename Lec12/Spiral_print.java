@@ -21,7 +21,7 @@ public class Spiral_print {
 			for (int i = minr; i <= maxr && c < te; i++) {
 				System.out.print(arr[i][maxc] + " ");
 				c++;
-			}
+ 			}
 			maxc--;
 			for (int i = maxc; i >= minc && c < te; i--) {
 				System.out.print(arr[maxr][i] + " ");
@@ -36,3 +36,7 @@ public class Spiral_print {
 		}
 	}
 }
+
+// Without c < te inside each loop, these loops might over run their boundaries and attempt to process elements unnecessarily (even though the while loop has the main condition).
+
+// Removing c < te from the for loops might work for most cases, but it introduces a risk of bugs in Edge Cases (e.g., single row/column arrays or irregular dimensions)

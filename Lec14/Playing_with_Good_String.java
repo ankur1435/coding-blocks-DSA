@@ -24,6 +24,7 @@ public class Playing_with_Good_String {
 			}
 
 		}
+		// we are writting upcoming code because if the last element character became vowel so the first Math.max check would not be impliment (use)
 		ans = Math.max(ans, c);
 		return ans;
 

@@ -6,7 +6,7 @@ public class String_Compresion {
 		// TODO Auto-generated method stub
 		String s1 = "kunal";
 		String s2 = "komal";
-		// System.out.println(s1.compareTo(s2));// +ve s1>s2 | -ve s1<s2 | 0 s1==s2
+		System.out.println(s1.compareTo(s2));// +ve s1>s2 | -ve s1<s2 | 0 s1==s2
 
 	}
 
@@ -18,6 +18,7 @@ public class String_Compresion {
 		for (int i = 0; i < len; i++) {
 			if (s1.charAt(i) != s2.charAt(i)) {
 				return s1.charAt(i) - s2.charAt(i);
+				// This line is used to determine the lexicographical order of the two strings.
 			}
 		}
 		return s1.length() - s2.length();
