@@ -9,7 +9,7 @@ public class Person_Client {
 		System.out.println(p1.getAge());
 		// System.out.println(p.name);
         // System.out.println(p.age);
-		p.setName("Rajesh");
+		p.setName("Ankur");
 		System.out.println(p.getName());
 		p.setAge(-9);
 		System.out.println(p.getAge());
