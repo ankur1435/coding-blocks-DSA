@@ -15,11 +15,11 @@ public class StudentClient {
 		s1.name = "Raj";
 		s1.age = 21;
 		s1.Intro_yourSelf();
-		s.SayHey("Ramesh");
+		s1.SayHey("Ramesh");
 		System.out.println(s.MentorName());
 		// static functions can be called by class not need of objects
 		System.out.println(Student.MentorName());
-
+ 
 	}
 	static {
 		System.out.println("I am in Static  Block Main");

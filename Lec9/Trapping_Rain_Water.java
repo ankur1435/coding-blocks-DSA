@@ -30,3 +30,8 @@ public class Trapping_Rain_Water {
 
 	}
 }
+
+// In the rainwater trapping problem, we're not comparing left[i] with arr[i] because:
+
+// left[i] stores the maximum height encountered up to index i from the left.
+// arr[i] is the height of the current bar similarly for right as well.

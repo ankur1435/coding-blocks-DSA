@@ -14,13 +14,17 @@ public class Product_of_Array_Except_Self {
 	public static int[] Product(int[] arr) {
 		int n = arr.length;
 		int[] left = new int[n];
+		// Purpose of left[]: It stores the cumulative product of all elements to the left of each index i
 		left[0] = 1;
 		for (int i = 1; i < n; i++) {
+			// left[i]: It represents the product of all elements to the left of index i (excluding arr[i]).
 			left[i] = left[i - 1] * arr[i - 1];
 		}
 		int[] right = new int[n];
+		// Purpose of right[]: It stores the cumulative product of all elements to the right of each index i
 		right[n - 1] = 1;
 		for (int i = n - 2; i >= 0; i--) {
+			// right[i]: It represents the product of all elements to the right of index i (excluding arr[i]).
 			right[i] = right[i + 1] * arr[i + 1];
 
 		}
