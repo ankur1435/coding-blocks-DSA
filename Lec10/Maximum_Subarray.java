@@ -9,7 +9,7 @@ public class Maximum_Subarray {
 		 
 
 	}
-
+    // Agar mai element 0 se arr.length elements ko plus karta jau to sare max subArray ke sum ko compare kar sakte h
 	public static int maximumsum(int[] arr) {
 		int ans = Integer.MIN_VALUE;
 		for (int i = 0; i < arr.length; i++) {
