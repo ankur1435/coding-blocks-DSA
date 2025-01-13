@@ -1,7 +1,5 @@
 package Lec30;
 
-
-
 public class Linked_List_Cycle {
 
 	class ListNode {

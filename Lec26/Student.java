@@ -2,7 +2,7 @@ package Lec26;
 
 public class Student {
 	private String name = "kaju";
-	private int age = 8;
+	private int age = 8; 
 
 	public Student() {
 		// TODO Auto-generated constructor stub

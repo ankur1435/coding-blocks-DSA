@@ -31,7 +31,12 @@ public class Queue {
 		if (isfull()) {
 			throw new Exception("Bklol Queue  full h");
 		}
+        // Instead of using front + size, you can directly use size % arr.length to find the correct index for the new element, because: front is always 0
+		// 
 		int idx = (front + size) % arr.length;
+		// front + size ensures you are always inserting the new element at the correct position, at the end of the queue.
+		// % arr.length: This ensures that the index is wrapped around circularly if we reach the end of the array. So, if the index exceeds the array size, it will loop back to the start of the array (circular behavior).
+		//  Without it, we'd run into out-of-bounds errors,
 		arr[idx] = item;
 		size++;
 	}
@@ -41,6 +46,7 @@ public class Queue {
 			throw new Exception("Bklol Queue  khaali h");
 		}
 		int v = arr[front];
+		//front ko ab update karna hoga qki ak element to nikal gya h and we are using % arr.length because queue is circular
 		front = (front + 1) % arr.length;
 		size--;
 		return v;
@@ -50,13 +56,13 @@ public class Queue {
 		if (isEmpty()) {
 			throw new Exception("Bklol Queue  khaali h");
 		}
-		int v = arr[front];
-		return v;
+		return arr[front];
 	}
 
 	public void Display() {
 		for (int i = 0; i < size; i++) {
-			int idx = (front + i) % arr.length;
+			int idx = i % arr.length;
+			// int idx = (front + i) % arr.length;
 			System.out.print(arr[idx] + " ");
 		}
 		System.out.println();

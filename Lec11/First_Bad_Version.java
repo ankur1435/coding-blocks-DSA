@@ -4,10 +4,10 @@ public class First_Bad_Version {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+        System.out.println(firstBadVersion(9));
+	} 
 
-	}
-
-	public int firstBadVersion(int n) {
+	public static int firstBadVersion(int n) {
 		int lo = 1;
 		int hi = n;
 		int ans = 0;
@@ -23,7 +23,7 @@ public class First_Bad_Version {
 		return ans;
 	}
 
-	public boolean isBadVersion(int mid) {
+	public static boolean isBadVersion(int mid) {
 		// TODO Auto-generated method stub
 		return false;
 	}

@@ -16,7 +16,7 @@ public class Finding_CB_Numbers {
                 int i = j - len;
                 long x = Long.parseLong(s.substring(i, j));
                 if (isCB_Numbers(x) && isvisited(visited, i, j - 1)) {
-					// We pass j-1 instead of j because j is the end index for the substring, but in Java, the substring() method is exclusive of the end inde
+					// We pass j-1 instead of j because j is the end index for the substring, but in Java, the substring() method is exclusive of the end index
                     c++;
                 }
             }
