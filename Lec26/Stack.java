@@ -26,13 +26,15 @@ public class Stack {
 		}
 	}
 
+	public int size() {
+		// The size() method returns idx + 1 because idx is zero-based (indicating the index of the top element), while size is one-based (indicating the count of elements in the stack).
+		return idx + 1;
+	} 
+
 	public boolean isFull() {
 		return size() == arr.length;
 	}
 
-	public int size() {
-		return idx + 1;
-	}
 	public void push(int item) throws Exception {
 		if (isFull()) {
 			throw new Exception("Bklol stack full hai ");
