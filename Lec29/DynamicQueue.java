@@ -1,6 +1,6 @@
 package Lec29;
 
-import Lec26.Queue;
+import Lec26.Queue; 
 
 public class DynamicQueue extends Queue {
 	@Override
@@ -11,11 +11,11 @@ public class DynamicQueue extends Queue {
 				int idx = (front + i) % arr.length;
 				new_arr[i] = arr[idx];
 			}
-			front = 0;
-			arr = new_arr;
+			front = 0;// no need of this line because front is never going to change we are just coping the data of old array into new array nowhere front is getting change
+			arr = new_arr; // you are updating the reference of the arr (the original queue's array) to point to the new, larger array (new_arr)
 
 		}
-		super.Enqueue(item);
+		super.Enqueue(item);// we are writing this line so that it will bring the whole code Enqueue from class Queue and we dont need to write it here
 	}
 	public static void main(String[] args) throws Exception {
 		DynamicQueue dq = new DynamicQueue();

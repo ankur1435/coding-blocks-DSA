@@ -34,6 +34,7 @@ public class Queue {
         // Instead of using front + size, you can directly use size % arr.length to find the correct index for the new element, because: front is always 0
 		// 
 		int idx = (front + size) % arr.length;
+		// isko aisa samgho ki size 0 se start ho rahi h 1 se nahi ho rahi h issiliye ham size ko leke chal rahe h because of zero based indexing size hamesha agle wale ko point karega aur hame ussi per rakhna h
 		// front + size ensures you are always inserting the new element at the correct position, at the end of the queue.
 		// % arr.length: This ensures that the index is wrapped around circularly if we reach the end of the array. So, if the index exceeds the array size, it will loop back to the start of the array (circular behavior).
 		//  Without it, we'd run into out-of-bounds errors,
@@ -61,8 +62,8 @@ public class Queue {
 
 	public void Display() {
 		for (int i = 0; i < size; i++) {
-			int idx = i % arr.length;
-			// int idx = (front + i) % arr.length;
+			// int idx = i % arr.length;
+			int idx = (front + i) % arr.length;
 			System.out.print(arr[idx] + " ");
 		}
 		System.out.println();

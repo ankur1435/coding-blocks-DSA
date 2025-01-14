@@ -28,6 +28,7 @@ public class Stack {
 
 	public int size() {
 		// The size() method returns idx + 1 because idx is zero-based (indicating the index of the top element), while size is one-based (indicating the count of elements in the stack).
+		// idx -1 se start ho rha h means koi data nahi h qki 0 based indexinng h to zahir si bat h idx + 1 hi size hoga pure ka jaisa array me hota h
 		return idx + 1;
 	} 
 
@@ -54,7 +55,9 @@ public class Stack {
 		if (isEmpty()) {
 			throw new Exception("Bklol stack Empty hai ");
 		}
-		return arr[idx--];
+		int v = arr[idx];
+		idx--;
+		return v;
 	}
 
 	public void Display() {
@@ -67,3 +70,7 @@ public class Stack {
 	}
 
 }
+
+
+
+// yaha ak cheej yad rakhne wali bat h ki idx top ka element ko dikha raha h lekin queue wale me size tha jisme top (sabse agge) size -1 tha aur size per ham naye element ko rakhte the
