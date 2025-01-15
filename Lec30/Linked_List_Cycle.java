@@ -10,7 +10,7 @@ public class Linked_List_Cycle {
 			val = x;
 			next = null;
 		}
-	}
+	} 
 
 	public class Solution {
 		public boolean hasCycle(ListNode head) {

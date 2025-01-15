@@ -6,7 +6,7 @@ public class Bin_to_Dec {
 		// TODO Auto-generated method stub
 		int n = 10101;
 		int sum = 0;
-		int mul = 1;
+		int mul = 1; 
 		while (n > 0) {
 			int rem = n % 10;
 			sum += rem * mul;

@@ -6,6 +6,7 @@ public class Odd_even {
 		// TODO Auto-generated method stub
 		int n = 67;
 		if ((n & 1) == 0) {
+			// will check the last bit
 			System.out.println("Even");
 		} else {
 			System.out.println("Odd");

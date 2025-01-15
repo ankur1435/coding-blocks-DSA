@@ -1,6 +1,6 @@
 package Lec30;
 
-public class LinkedList {
+public class LinkedList { 
 	class Node {
 
 		int val;

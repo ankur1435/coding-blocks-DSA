@@ -1,6 +1,6 @@
 package Lec30;
 
-public class LinkedListClient {
+public class LinkedListClient { 
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub

@@ -8,7 +8,7 @@ public class Dec_To_Bin {
 		int sum = 0;
 		int mul = 1;
 		while (n > 0) {
-			int rem = n % 2;
+			int rem = n % 2; 
 			sum = sum + rem * mul;
 			mul = mul * 10;
 			n = n / 2;
