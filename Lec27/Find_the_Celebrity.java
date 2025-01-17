@@ -11,7 +11,7 @@ public class Find_the_Celebrity {
 	}
 
 	private static int Celebrity(int[][] arr) {
-		// filtering the stack with only who been known
+		// filtering the stack with only who been known here
 		Stack<Integer> st = new Stack<>();
 		for (int i = 0; i < arr.length; i++) {
 			st.push(i);
