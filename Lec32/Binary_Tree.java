@@ -12,7 +12,7 @@ public class Binary_Tree {
 		Node right;
 	}
 
-	private Node root;
+	private Node root;// it is just a variable of Node we can use inplace of Node everywhere
 	Scanner sc = new Scanner(System.in);
 
 	public Binary_Tree() {
@@ -107,56 +107,60 @@ public class Binary_Tree {
 		return Math.max(lh, rh) + 1;
 
 	}
+
 	public void PreOrder() {
 		PreOrder(this.root);
 		System.out.println();
 	}
 
 	private void PreOrder(Node node) {
-		if(node==null) {
+		if (node == null) {
 			return;
 		}
-		System.out.print(node.val+" ");
+		System.out.print(node.val + " ");
 		PreOrder(node.left);
 		PreOrder(node.right);
 	}
+
 	public void PostOrder() {
 		PostOrder(this.root);
 		System.out.println();
 	}
-	
+
 	private void PostOrder(Node node) {
-		if(node==null) {
+		if (node == null) {
 			return;
 		}
 		PostOrder(node.left);
 		PostOrder(node.right);
-		System.out.print(node.val+" ");
+		System.out.print(node.val + " ");
 	}
+
 	public void INOrder() {
 		INOrder(this.root);
 		System.out.println();
 	}
-	
+
 	private void INOrder(Node node) {
-		if(node==null) {
+		if (node == null) {
 			return;
 		}
 		INOrder(node.left);
-		System.out.print(node.val+" ");
+		System.out.print(node.val + " ");
 		INOrder(node.right);
-		
+
 	}
+
 	public void levelorder() {
 		Queue<Node> q = new LinkedList<>();
 		q.add(root);
-		while(!q.isEmpty()) {
-			Node r=q.poll();
-			System.out.print(r.val+" ");
-			if(r.left!=null) {
+		while (!q.isEmpty()) {
+			Node r = q.poll();
+			System.out.print(r.val + " ");
+			if (r.left != null) {
 				q.add(r.left);
 			}
-			if(r.right!=null) {
+			if (r.right != null) {
 				q.add(r.right);
 			}
 		}
@@ -164,24 +168,3 @@ public class Binary_Tree {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

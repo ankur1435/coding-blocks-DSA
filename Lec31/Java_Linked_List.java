@@ -15,9 +15,9 @@ public class Java_Linked_List {
 		System.out.println(ll);
 		System.out.println(ll.size());
 		System.out.println(ll.get(1));
-//		System.out.println(ll.remove());// remove first
-//		System.out.println(ll.removeLast());// remove last
-//		System.out.println(ll.remove(1));// reamove at index
+		System.out.println(ll.remove());// remove first
+		System.out.println(ll.removeLast());// remove last
+		System.out.println(ll.remove(1));// reamove at index
 		System.out.println(ll);
 		for (int i = 0; i < ll.size(); i++) {
 			System.out.print(ll.get(i) + " ");
@@ -25,24 +25,11 @@ public class Java_Linked_List {
 		System.out.println();
 		// address
 		Iterator<Integer> a = ll.iterator();
-		while(a.hasNext()) {
-			System.out.print(a.next()+" ");
-			
+		while (a.hasNext()) {
+			System.out.print(a.next() + " ");
+
 		}
 
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

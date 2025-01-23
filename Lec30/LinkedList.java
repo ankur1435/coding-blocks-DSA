@@ -1,6 +1,6 @@
 package Lec30;
 
-public class LinkedList { 
+public class LinkedList {
 	class Node {
 
 		int val;
@@ -20,6 +20,8 @@ public class LinkedList {
 			tail = nn;
 
 		} else {
+			// head ki value ko jo naya node bana h usme dalenge aur head ko ab update karke
+			// nn per la denge jaise jaise naya banega node head update hota rahega
 			nn.next = head;
 			head = nn;
 
@@ -99,7 +101,7 @@ public class LinkedList {
 		} else {
 			Node temp = head;
 			head = head.next;
-			temp.next = null;
+			temp.next = null;// doing this for breaking the connection
 
 		}
 		size--;
@@ -132,24 +134,10 @@ public class LinkedList {
 		} else {
 			Node curr = getNode(k);
 			Node prev = getNode(k - 1);
-			prev.next=curr.next;
-			curr.next=null;
+			prev.next = curr.next;
+			curr.next = null;// making this one last
 			size--;
 			return curr.val;
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

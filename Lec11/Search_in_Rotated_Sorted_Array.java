@@ -26,9 +26,8 @@ public class Search_in_Rotated_Sorted_Array {
 
 			else {// lower line pe hu
 				if (arr[hi] >= item && arr[mid] < item) {
-					lo=mid+1;
-				}
-				else {
+					lo = mid + 1;
+				} else {
 					hi = mid - 1;
 				}
 			}
