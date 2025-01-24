@@ -32,7 +32,8 @@ public class LinkedList {
 	// O(1)
 	public void Addlast(int item) {
 		if (size == 0) {
-			Addfirst(item);
+			Addfirst(item);// no need to write size++ here because we are increamenting size in the
+							// AddFirst function
 		} else {
 			Node nn = new Node();
 			nn.val = item;
@@ -40,6 +41,19 @@ public class LinkedList {
 			tail = nn;
 			size++;
 		}
+	}
+
+	private Node getNode(int k) throws Exception {
+		if (k < 0 || k >= size) {
+			throw new Exception("Bklol k shai nhi hai ");
+		}
+		Node temp = head;
+		for (int i = 0; i < k; i++) {
+			// Full travel from 0 till one less than k because k will be last one to have
+			// the desired value
+			temp = temp.next;
+		}
+		return temp;
 	}
 
 	// O(N)
@@ -51,22 +65,11 @@ public class LinkedList {
 		} else {
 			Node nn = new Node();
 			nn.val = item;
-			Node prev = getNode(k - 1);
+			Node prev = getNode(k - 1);// doing k-1 because linkedlist is zero based indexing
 			nn.next = prev.next;
 			prev.next = nn;
 			size++;
 		}
-	}
-
-	private Node getNode(int k) throws Exception {
-		if (k < 0 || k >= size) {
-			throw new Exception("Bklol k shai nhi hai ");
-		}
-		Node temp = head;
-		for (int i = 0; i < k; i++) {
-			temp = temp.next;
-		}
-		return temp;
 	}
 
 	public void Display() {
@@ -100,8 +103,8 @@ public class LinkedList {
 			tail = null;
 		} else {
 			Node temp = head;
-			head = head.next;
-			temp.next = null;// doing this for breaking the connection
+			head = head.next;// going one step forward here
+			temp.next = null;// the last one should me marked as null
 
 		}
 		size--;

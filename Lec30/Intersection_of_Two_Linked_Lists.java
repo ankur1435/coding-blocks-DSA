@@ -25,7 +25,7 @@ public class Intersection_of_Two_Linked_Lists {
 				}
 				if (g == null) {
 					g = headB;
-					
+
 				} else {
 					g = g.next;
 				}
