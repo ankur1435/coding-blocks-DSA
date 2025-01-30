@@ -22,11 +22,11 @@ public class Reverse_linked_list {
 		public ListNode reverseList(ListNode head) {
 			ListNode curr = head;
 			ListNode prev = null;
-			while(curr!=null) {
+			while (curr != null) {
 				ListNode ahead = curr.next;
-				curr.next=prev;
-				prev=curr;
-				curr=ahead;
+				curr.next = prev;
+				prev = curr;
+				curr = ahead;
 			}
 			return prev;
 
@@ -34,10 +34,3 @@ public class Reverse_linked_list {
 	}
 
 }
-
-
-
-
-
-
-

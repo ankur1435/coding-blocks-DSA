@@ -10,7 +10,7 @@ public class Stack_Using_LinkedList {
 	}
 
 	public int pop() {
-		return ll.remove();// remove fisrt
+		return ll.remove();// remove first
 	}
 
 	public int size() {

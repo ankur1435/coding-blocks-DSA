@@ -6,7 +6,12 @@ public class Find_the_Celebrity {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[][] arr = { { 0, 1, 1, 1 }, { 1, 0, 1, 1 }, { 0, 0, 0, 0 }, { 1, 1, 1, 0 } };
+		int[][] arr = { 
+		{ 0, 1, 1, 1 }, 
+		{ 1, 0, 1, 1 }, 
+		{ 0, 0, 0, 0 }, 
+		{ 1, 1, 1, 0 } 
+	};
 		System.out.println(Celebrity(arr));
 	}
 

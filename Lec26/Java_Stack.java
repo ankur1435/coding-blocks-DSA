@@ -2,12 +2,14 @@ package Lec26;
 
 import java.util.Stack;
 
-public class Java_Stack { 
+public class Java_Stack {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Stack<Integer> st = new Stack<>();
-		// Default Capacity: When you create a Stack object without specifying a size, Java assigns it an initial default capacity. This default capacity is typically a small number (often 10).
+		// Default Capacity: When you create a Stack object without specifying a size,
+		// Java assigns it an initial default capacity. This default capacity is
+		// typically a small number (often 10).
 		System.out.println(st.capacity());
 		// add
 		st.push(10);
@@ -23,6 +25,7 @@ public class Java_Stack {
 		System.out.println(st);
 		System.out.println(st.isEmpty());
 		System.out.println(st.size());
+		// forin loop
 		for (int v : st) {
 			System.out.print(v + " ");
 		}
@@ -40,5 +43,6 @@ public class Java_Stack {
 
 }
 
-// Capacity refers to the total number of elements the stack can hold before it needs to be resized.
+// Capacity refers to the total number of elements the stack can hold before it
+// needs to be resized.
 // Size refers to the number of elements currently in the stack.

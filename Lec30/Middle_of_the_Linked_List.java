@@ -30,21 +30,12 @@ public class Middle_of_the_Linked_List {
 			return slow;
 		}
 	}
-
-	public static void main(String[] args) {
-		Middle_of_the_Linked_List obj = new Middle_of_the_Linked_List();
-		Solution solution = obj.new Solution();
-
-		// Creating a linked list: 1 -> 2 -> 3 -> 4 -> 5
-		ListNode head = obj.new ListNode(1);
-		head.next = obj.new ListNode(2);
-		head.next.next = obj.new ListNode(3);
-		head.next.next.next = obj.new ListNode(4);
-		head.next.next.next.next = obj.new ListNode(5);
-
-		ListNode middle = solution.middleNode(head);
-
-		System.out.println("The middle node is: " + middle.val);
-	}
-
 }
+
+// fast != null: This ensures that the fast pointer itself is not null. If fast
+// is null, accessing fast.next or fast.next.next would throw a
+// NullPointerException.
+
+// fast.next != null: This ensures that the fast pointer can safely move to
+// fast.next.next. If fast.next is null, then fast.next.next would not be valid,
+// and we avoid accessing it.

@@ -1,7 +1,5 @@
 package Lec31;
 
-
-
 public class Sort_List {
 	public class ListNode {
 		int val;
@@ -22,6 +20,7 @@ public class Sort_List {
 
 	class Solution {
 		public ListNode sortList(ListNode head) {
+			// Base case: If the list is empty or has only one node, it's already sorted
 			if (head == null || head.next == null) {
 				return head;
 			}
@@ -61,6 +60,7 @@ public class Sort_List {
 			ListNode slow = head;
 			ListNode fast = head;
 			while (fast.next != null && fast.next.next != null) {
+				// The loop continues only if both conditions are true
 				slow = slow.next;
 				fast = fast.next.next;
 			}

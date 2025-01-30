@@ -46,7 +46,7 @@ public class Cycle_removal {
 			slow = slow.next;
 			fast = fast.next.next;
 			if (slow == fast) {
-				return slow;
+				return slow;// you can return fast as well
 			}
 
 		}
@@ -90,29 +90,31 @@ public class Cycle_removal {
 		}
 		// fast ko m distance move kra dete hain
 		Node fast = head;
-		for(int i=0; i<c; i++) {
-			fast=fast.next;
+		for (int i = 0; i < c; i++) {
+			fast = fast.next;
 		}
-		Node slow=head;
-		while(slow.next!=fast.next) {
-			slow=slow.next;
-			fast=fast.next;
+		Node slow = head;
+		while (slow.next != fast.next) {
+			slow = slow.next;
+			fast = fast.next;
 		}
-		fast.next=null;
+		fast.next = null;
 	}
+
 	public void floyedCycle() {
 		Node meet = hasCycle();
 		if (meet == null) {
 			return;
 		}
-		Node slow=head;
-		Node fast=meet;
-		while(slow.next!=fast.next) {
-			slow=slow.next;
-			fast=fast.next;
+		Node slow = head;
+		Node fast = meet;
+		while (slow.next != fast.next) {
+			slow = slow.next;
+			fast = fast.next;
 		}
-		fast.next=null;
+		fast.next = null;
 	}
+
 	public void Display() {
 		Node temp = head;
 		while (temp != null) {
