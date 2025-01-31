@@ -36,6 +36,8 @@ public class Binary_Tree {
 		return nn;
 	}
 
+	// It ensures that the user only calls Display() without needing to pass the
+	// root node explicitly.
 	public void Display() {
 		Display(root);
 	}
