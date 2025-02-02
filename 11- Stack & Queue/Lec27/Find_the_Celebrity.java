@@ -40,6 +40,7 @@ public class Find_the_Celebrity {
 				return -1;
 			}
 		}
+		
 		return candidate;
 
 	}
