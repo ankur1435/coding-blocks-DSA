@@ -20,17 +20,14 @@ public class Valid_Parentheses {
 			} else {
 				if (st.isEmpty()) {
 					return false;
-				}
-				else if(ch==')' && st.peek()!='(') {
+				} else if (ch == ')' && st.peek() != '(') {
+					return false;
+				} else if (ch == '}' && st.peek() != '{') {
+					return false;
+				} else if (ch == ']' && st.peek() != '[') {
 					return false;
 				}
-				else if(ch=='}' && st.peek()!='{') {
-					return false;
-				}
-				else if(ch==']' && st.peek()!='[') {
-					return false;
-				}
-				
+
 				st.pop();
 			}
 		}
