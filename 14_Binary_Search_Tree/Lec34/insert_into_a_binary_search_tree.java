@@ -25,7 +25,9 @@ public class insert_into_a_binary_search_tree {
 			if (root == null) {
 				TreeNode newNode = new TreeNode(val);
 				return newNode;
-
+				// we can not return root here because root is null at this current time
+				// If we didn't return the new node at root == null, the function would exit
+				// without making any changes, and the tree would remain:
 			}
 			if (root.val > val) {
 				root.left = insertIntoBST(root.left, val);

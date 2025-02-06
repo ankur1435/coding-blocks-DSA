@@ -36,7 +36,7 @@ public class Delete_Node_in_a_BST {
 				} else if (root.right == null) {
 					return root.left;
 				} else {// both child
-					int m = max(root.left);// 9
+					int m = max(root.left);
 					root.left = deleteNode(root.left, m);
 					root.val = m;
 				}
@@ -50,6 +50,9 @@ public class Delete_Node_in_a_BST {
 			}
 			int r = max(root.right);
 			return Math.max(r, root.val);
+			// We recursively call the max function on the right child (root.right). This is
+			// because in a Binary Search Tree (BST), the maximum value will always be the
+			// rightmost node
 		}
 	}
 }
