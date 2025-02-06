@@ -39,7 +39,7 @@ public class Diameter_of_Binary_Tree {
 			}
 			int lh = ht(root.left);
 			int rh = ht(root.right);
-			return Math.max(lh, rh) + 1;
+			return Math.max(lh, rh) + 1;// here 1 denotes for the root node
 		}
 	}
 }
