@@ -23,7 +23,8 @@ public class insert_into_a_binary_search_tree {
 	class Solution {
 		public TreeNode insertIntoBST(TreeNode root, int val) {
 			if (root == null) {
-				return new TreeNode(val);
+				TreeNode newNode = new TreeNode(val);
+				return newNode;
 
 			}
 			if (root.val > val) {

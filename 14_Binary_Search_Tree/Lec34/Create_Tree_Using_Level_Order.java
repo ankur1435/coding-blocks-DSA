@@ -1,7 +1,6 @@
 package Lec34;
 
 import java.util.*;
-import java.util.Scanner;
 
 public class Create_Tree_Using_Level_Order {
 	class Node {
@@ -33,7 +32,7 @@ public class Create_Tree_Using_Level_Order {
 			int r = sc.nextInt();
 
 			// add child
-			if (l != -1) {
+			if (l != -1) { // if l is not -1, it means the current node (n) does have a left
 				Node node = new Node();
 				node.val = l;
 				n.left = node;
@@ -49,4 +48,9 @@ public class Create_Tree_Using_Level_Order {
 		}
 
 	}
+
+	// In Java, Queue is an interface, not a concrete class. An interface defines a
+	// contract, but it doesn't provide a specific implementation. So, you can't
+	// directly create an instance of Queue. Instead, you need to use a concrete
+	// class that implements the Queue interface
 }
