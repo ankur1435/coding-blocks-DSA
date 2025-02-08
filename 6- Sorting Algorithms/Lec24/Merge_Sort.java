@@ -5,9 +5,9 @@ public class Merge_Sort {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 7, 3, 1, 5, 2 };
-		int [] ans =sort(arr, 0, arr.length-1);
+		int[] ans = sort(arr, 0, arr.length - 1);
 		for (int i = 0; i < ans.length; i++) {
-			System.out.print(ans[i]+" ");
+			System.out.print(ans[i] + " ");
 		}
 
 	}
