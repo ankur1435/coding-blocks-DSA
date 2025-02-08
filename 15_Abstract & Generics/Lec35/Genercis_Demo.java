@@ -10,15 +10,21 @@ public class Genercis_Demo {
 		Display(arr1);
 	}
 
-	public static <T>void Display(T[] arr) {
+	public static <T> void Display(T[] arr) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < arr.length; i++) {
 			System.out.println(arr[i]);
 		}
 	}
-	public static <T>T get(T[] arr) {
+
+	public static <T> T get(T[] arr) {
 		// TODO Auto-generated method stub
 		return arr[0];
 	}
 
 }
+
+// Generics in Java allow you to write flexible and reusable code. They provide
+// a way to create classes, interfaces, and methods that can operate on any type
+// of data (like Integer, String, Double, etc.) while ensuring type safety
+// during compile time

@@ -10,4 +10,5 @@ public interface A extends B, C {
 
 // It only declares methods (what needs to be done) but doesn't give the actual
 // implementation (how it should be done). The class implementing the interface
-// must define how the methods work.
+// Interfaces can extend multiple interfaces (unlike classes, which can only
+// extend one class).
