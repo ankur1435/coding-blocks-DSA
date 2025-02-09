@@ -16,12 +16,17 @@ public class Student {
 		System.out.println(this.name + " Say hello " + name);
 
 	}
- 
+
 	public static String MentorName() {
 		return "Monu Bhaiya";
 	}
-    // MentorName() is marked as static because it doesn’t need to operate on an instance of the Student class.
-    // It simply returns a constant string, "Monu Bhaiya", which is not dependent on any instance-specific data (like the name or age instance variables). So, it makes sense to make it static because it's tied to the class itself, not to any particular object.
+
+	// MentorName() is marked as static because it doesn’t need to operate on an
+	// instance of the Student class.
+	// It simply returns a constant string, "Monu Bhaiya", which is not dependent on
+	// any instance-specific data (like the name or age instance variables). So, it
+	// makes sense to make it static because it's tied to the class itself, not to
+	// any particular object.
 	static {
 		System.out.println("I am in Static  Block");
 	}

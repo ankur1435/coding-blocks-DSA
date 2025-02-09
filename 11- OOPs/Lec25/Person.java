@@ -1,15 +1,16 @@
 package Lec25;
 
 public class Person {
-    // Instance variables (fields)
+	// Instance variables (fields)
 	private String name = "Kaju";
-	private int age = 21;
+	private int age = 21; // instance variable
 
-    // default constructor
+	// default constructor
 	public Person() {
 
 	}
-    // parameterized constructor
+
+	// parameterized constructor
 	public Person(String name, int age) {
 		this.name = name;
 		this.age = age;
@@ -22,7 +23,7 @@ public class Person {
 	public String getName() {
 		return this.name;
 	}
- 
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -40,10 +41,14 @@ public class Person {
 	}
 
 }
+// If you don't define any constructors in your class (neither a default
+// constructor nor a parameterized constructor), Java will provide an implicit
+// (automatic) default constructor for your class.
 
-// you use this keyword only when you need to distinguish between instance variables and local variables or parameters with the same name
+// you use this keyword only when you need to distinguish between instance
+// variables and local variables or parameters with the same name
 
-
-
-// Without any constructors, you can create objects, but the instance variables will have default values.
-// With a parameterized constructor, you can pass arguments while creating the object to initialize instance variables with specific values.
+// Without any constructors, you can create objects, but the instance variables
+// will have default values.
+// With a parameterized constructor, you can pass arguments while creating the
+// object to initialize instance variables with specific values.

@@ -19,10 +19,16 @@ public class StudentClient {
 		System.out.println(s.MentorName());
 		// static functions can be called by class not need of objects
 		System.out.println(Student.MentorName());
- 
+
 	}
+
 	static {
 		System.out.println("I am in Static  Block Main");
 	}
 
-} 
+}
+
+// Static blocks in a class are executed when the class is loaded, before the
+// main method starts. Static blocks within a class execute in the order they
+// appear. So, static blocks in the Student class run first, then the
+// StudentClient static block, and then the main method.
