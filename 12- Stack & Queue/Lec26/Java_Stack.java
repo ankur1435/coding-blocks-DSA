@@ -1,4 +1,4 @@
-package Lec26;
+// package Lec26;
 
 import java.util.Stack;
 
@@ -20,7 +20,7 @@ public class Java_Stack {
 		// get
 		System.out.println(st.peek());
 		// remove
-		System.out.println(st);
+		System.out.println(st);// will print the values in the stack
 		System.out.println(st.pop());
 		System.out.println(st);
 		System.out.println(st.isEmpty());
