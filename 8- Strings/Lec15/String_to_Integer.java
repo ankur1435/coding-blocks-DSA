@@ -10,7 +10,7 @@ public class String_to_Integer {
 		String s1="6779877689999";
 		long l = Long.parseLong(s1);
 		System.out.println(l);
-
-	}
+//
+	} 
 
 }
