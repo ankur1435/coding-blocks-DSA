@@ -17,7 +17,7 @@ public class magic_number {
 				sum += mul;
 			}
 			n >>= 1;
-			mul = mul * 5;
+			mul *= 5;
 		}
 		return sum;
 	}

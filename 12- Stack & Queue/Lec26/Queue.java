@@ -78,7 +78,6 @@ public class Queue {
 	public void Display() {
 		for (int i = 0; i < size; i++) {
 			// size means how many elements are there in the queue
-			// int idx = i % arr.length;
 			int idx = (front + i) % arr.length;
 			// Imagine a circular queue (size 5) with front at index 2 and 3 elements. The
 			// elements are at indices 2, 3, and 4. i counts from 0 to 2 (the size). front +
