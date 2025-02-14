@@ -31,11 +31,3 @@ public class Count_Set_Bit {
 	}
 
 }
-
-
-
-
-
-
-
-

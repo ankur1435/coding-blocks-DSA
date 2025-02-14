@@ -7,7 +7,9 @@ public class Single_Number {
 		int[] nums = { 4, 1, 2, 1, 2 };
 		int ans = 0;
 		for (int i = 0; i < nums.length; i++) {
-			// ^ is the sign of XOR operator
+			// ^ is the sign of XOR operator when use XOR between two numbers the same
+			// number gets cancel out and answer become 0 and use XOR between 0 and a number
+			// n then answer will be that perticular number
 			ans = ans ^ nums[i];
 		}
 		System.out.println(ans);
@@ -16,6 +18,7 @@ public class Single_Number {
 }
 
 // How XOR works
-// a ^ a = 0 → Same numbers cancel out.
-// a ^ 0 = a → XOR with zero leaves the number unchanged.
-// a ^ b ^ a = b → Order doesn't matter; identical pairs vanish.
+// 1 ^ 1 → 0 (same bits → 0)
+// 0 ^ 0 → 0 (same bits → 0)
+// 1 ^ 0 → 1 (different bits → 1)
+// 0 ^ 1 → 1 (different bits → 1)
