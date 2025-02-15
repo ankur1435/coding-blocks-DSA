@@ -15,6 +15,8 @@ public class Tavas_and_SaDDas {
 	public static int INDEX(String str) {
 		int n = str.length();
 		int count = (1 << n) - 2;// n-1 digit tk ka saara count aagya
+		// count represents the total number of all lucky numbers with fewer than 9
+		// digits.
 		int pos = 0;
 		for (int i = n - 1; i >= 0; i--) {
 			if (str.charAt(i) == '7') {

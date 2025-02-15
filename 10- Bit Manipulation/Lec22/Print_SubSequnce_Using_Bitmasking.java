@@ -15,7 +15,6 @@ public class Print_SubSequnce_Using_Bitmasking {
 		for (int i = 0; i < (1 << n); i++) {
 			pattern(str, i);
 		}
-
 	}
 
 	public static void pattern(String str, int i) {
