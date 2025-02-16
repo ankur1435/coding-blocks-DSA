@@ -39,3 +39,6 @@ public class Stack_Reverse {
 
 	}
 }
+
+// Removes all elements from the stack recursively.
+// Inserts each popped element at the bottom during the backtracking phase.
