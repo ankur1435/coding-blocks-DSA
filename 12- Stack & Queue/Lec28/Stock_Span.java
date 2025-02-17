@@ -1,3 +1,5 @@
+package Lec28;
+
 import java.util.Stack;
 
 public class Stock_Span {
@@ -11,15 +13,16 @@ public class Stock_Span {
 		int ans[] = new int[arr.length];
 
 		for (int i = 0; i < arr.length; i++) {
-			int count = 1; // Start count for current element
+			int count = 1;
 
-			// Pop elements while current price is greater
 			while (!st.isEmpty() && arr[i] > arr[st.peek()]) {
-				count += ans[st.pop()]; // Add spans of popped elements
+				count += ans[st.pop()]; // count ko update karte rahna padega jab tak anne wala element pichhle wale se
+										// chhota na ho jaye, jaise hi satisfy nahi hua condition simply jao aur count
+										// ko uss in dex per paste kardo
 			}
 
-			ans[i] = count; // Store the span for current index
-			st.push(i); // Push current index
+			ans[i] = count;
+			st.push(i);
 		}
 
 		for (int i = 0; i < ans.length; i++) {
