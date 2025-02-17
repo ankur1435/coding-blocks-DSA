@@ -1,7 +1,7 @@
 package Lec29;
 
 public class Addition {
- 
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println(add(12, 8));
@@ -9,13 +9,15 @@ public class Addition {
 		System.out.println(add(12, 8.8));
 		System.out.println(add(12, 8, 9));
 		System.out.println(add(12, 8l));
+		System.out.println(add(10, 90.8));
 		System.out.println(add(2, 3, 1, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3));
 
 	}
-//
-//	public static void add(int a, int b) {
-//
-//	}
+
+	//
+	// public static void add(int a, int b) {
+	//
+	// }
 	public static int add(int... x) {
 		int sum = 0;
 		for (int i = 0; i < x.length; i++) {
@@ -43,4 +45,5 @@ public class Addition {
 
 }
 
-// double is often used over float when you need better precision for mathematical calculations.
+// double is often used over float when you need better precision for
+// mathematical calculations.

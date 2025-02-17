@@ -16,12 +16,14 @@ public class Stock_Span {
 			int count = 1;
 
 			while (!st.isEmpty() && arr[i] > arr[st.peek()]) {
-				count += ans[st.pop()]; // count ko update karte rahna padega jab tak anne wala element pichhle wale se
-										// chhota na ho jaye, jaise hi satisfy nahi hua condition simply jao aur count
-										// ko uss in dex per paste kardo
+				count += ans[st.pop()];
+				// count ko update karte rahna padega jab tak anne wala element pichhle wale se
+				// chhota na ho jaye, jaise hi satisfy nahi hua condition simply jao aur count
+				// ko uss in dex per paste kardo
 			}
 
-			ans[i] = count;
+			ans[i] = count; // agar kabhi bhi current previous se bada nahi hoga to hamesha se count = 1 hi
+							// ans array me bharta rahega
 			st.push(i);
 		}
 

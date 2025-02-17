@@ -14,12 +14,12 @@ public class Client {
 
 		// // 2. case
 		// P obj = new C();
-		// // Only the members declared in P can be accessed directly.
-		// // Members in C (like d2) are not accessible unless the object is explicitly
+		// Only the members declared in P can be accessed directly.
+		// Members in C (like d2) are not accessible unless the object is explicitly
 		// cast to type C.
 		// System.out.println(obj.d); // Accesses 'd' from P
 		// System.out.println(obj.d1); // Accesses 'd1' from P
-		// // System.out.println(obj.d2); // Compile-time error: 'd2' is not defined in
+		// System.out.println(obj.d2); // Compile-time error: 'd2' is not defined in
 		// P
 		// System.out.println(((C) obj).d2);// 20
 		// System.out.println(((C) obj).d);// 2
@@ -29,7 +29,7 @@ public class Client {
 
 		// // 3. case
 		// C obj = new P();
-		// // This case will not compile because P is the superclass of C, and you
+		// This case will not compile because P is the superclass of C, and you
 		// cannot assign a parent type (P) object to a child type (C) reference without
 		// explicit casting.
 		// System.out.println(obj.d);// 1
