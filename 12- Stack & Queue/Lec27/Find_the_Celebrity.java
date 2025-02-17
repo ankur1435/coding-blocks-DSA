@@ -33,6 +33,10 @@ public class Find_the_Celebrity {
 		}
 		int candidate = st.pop();
 		for (int i = 0; i < arr.length; i++) {
+			// having this logic here at somewhere we could check arr[candidate][candidate]
+			// if the value is 0 then there will be no issue but if it is 1 then is will
+			// disqualify and will mark potential celebrity knows i but i itself is the
+			// candidate so we will always should have this check
 			if (i == candidate) {
 				continue;
 			}
@@ -40,7 +44,7 @@ public class Find_the_Celebrity {
 				return -1;
 			}
 		}
-		
+
 		return candidate;
 
 	}

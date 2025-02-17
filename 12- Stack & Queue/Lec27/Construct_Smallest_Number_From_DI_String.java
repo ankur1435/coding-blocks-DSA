@@ -18,6 +18,7 @@ public class Construct_Smallest_Number_From_DI_String {
 		for (int i = 0; i <= pattern.length(); i++) {
 			if (i == pattern.length() || pattern.charAt(i) == 'I') {
 				ans[i] = count++;
+				// here first initialization will happen and then the increament
 				while (!st.isEmpty()) {
 					ans[st.pop()] = count++;
 				}

@@ -18,6 +18,9 @@ public class Valid_Parentheses {
 			if (ch == '(' || ch == '{' || ch == '[') {
 				st.push(ch);
 			} else {
+				// this check is here to know agar pahle se koi closing opening wala hai hi nahi
+				// stack me jisse ham dhoodh rahe h qki hamare pass ak closing h stack me agar
+				// koi opening nahi h to return false kardo
 				if (st.isEmpty()) {
 					return false;
 				} else if (ch == ')' && st.peek() != '(') {
