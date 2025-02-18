@@ -28,17 +28,16 @@ public class Merge_Two_Sorted_LinkedList {
 					Dummy.next = list1;
 					list1 = list1.next;
 					Dummy = Dummy.next;
-				}
-				else {
+				} else {
 					Dummy.next = list2;
 					list2 = list2.next;
 					Dummy = Dummy.next;
 				}
 			}
-			if(list1!=null) {
+			if (list1 != null) {
 				Dummy.next = list1;
 			}
-			if(list2!=null) {
+			if (list2 != null) {
 				Dummy.next = list2;
 			}
 			return temp.next;

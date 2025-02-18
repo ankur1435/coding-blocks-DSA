@@ -1,5 +1,7 @@
 package Lec31;
 
+import Lec35.B;
+
 public class Sort_List {
 	public class ListNode {
 		int val;
@@ -24,6 +26,8 @@ public class Sort_List {
 			if (head == null || head.next == null) {
 				return head;
 			}
+			// mid is the first half of the list: from head to mid.
+			// headb is the second half: from mid.next onward.
 			ListNode mid = middleNode(head);
 			ListNode headb = mid.next;
 			mid.next = null;
@@ -68,3 +72,6 @@ public class Sort_List {
 		}
 	}
 }
+
+// In summary: We divide the list, recursively sort the sublists, and then merge
+// them back together in sorted order.
