@@ -112,7 +112,7 @@ public class Cycle_removal {
 			slow = slow.next;
 			fast = fast.next;
 		}
-		fast.next = null;
+		fast.next = null;// exactly fast.next yaha per meet per ho
 	}
 
 	public void Display() {
