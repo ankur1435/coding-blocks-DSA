@@ -9,7 +9,7 @@ public class Histogram {
 		int[] arr = { 2, 1, 5, 6, 2, 3 };
 		System.out.println(largestArea(arr));
 	}
- 
+
 	public static int largestArea(int[] heights) {
 		Stack<Integer> st = new Stack<>();
 		int area = 0;
@@ -40,5 +40,5 @@ public class Histogram {
 		return area;
 
 	}
- 
+
 }

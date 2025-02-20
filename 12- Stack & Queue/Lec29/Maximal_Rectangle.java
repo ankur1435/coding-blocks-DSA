@@ -49,7 +49,7 @@ public class Maximal_Rectangle {
 			} else {
 				int l = st.peek();
 				area = Math.max(area, h * (r - l - 1));
-			} 
+			}
 		}
 		return area;
 

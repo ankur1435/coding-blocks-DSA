@@ -31,17 +31,9 @@ public class Path_Sum {
 			}
 			boolean left = hasPathSum(root.left, targetSum - root.val);
 			boolean right = hasPathSum(root.right, targetSum - root.val);
-			return left||right;
+			return left || right;
 
 		}
 	}
 
 }
-
-
-
-
-
-
-
-
