@@ -27,7 +27,8 @@ public class Histogram {
 			}
 			st.push(i);
 		}
-		int r = heights.length;
+		int r = heights.length; // Since there is no right boundary for left elements, we assume their right
+								// boundary extends to the end of the array
 		while (!st.isEmpty()) {
 			int h = heights[st.pop()];
 
