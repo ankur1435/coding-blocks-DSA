@@ -16,7 +16,8 @@ public class Histogram {
 		for (int i = 0; i < heights.length; i++) {
 			while (!st.isEmpty() && heights[i] < heights[st.peek()]) {
 				int h = heights[st.pop()];
-				int r = i;
+				int r = i; // The right boundary (r) is the current index (i) because this is the point
+							// where the bar can no longer extend.
 				if (st.isEmpty()) {
 					area = Math.max(area, h * r);
 				} else {

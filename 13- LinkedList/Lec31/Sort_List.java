@@ -31,6 +31,7 @@ public class Sort_List {
 			ListNode mid = middleNode(head);
 			ListNode headb = mid.next;
 			mid.next = null;
+			// Recursion keeps dividing the list until each part has just one node.
 			ListNode A = sortList(head);
 			ListNode B = sortList(headb);
 			return mergeTwoLists(A, B);
