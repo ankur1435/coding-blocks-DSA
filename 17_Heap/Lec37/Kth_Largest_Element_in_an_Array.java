@@ -18,6 +18,7 @@ public class Kth_Largest_Element_in_an_Array {
 		}
 		for (int i = k; i < nums.length; i++) {
 			if (nums[i] >= pq.peek()) {
+				// This line ensures that the heap always contains the largest k elements.
 				pq.poll();
 				pq.add(nums[i]);
 			}
@@ -26,3 +27,11 @@ public class Kth_Largest_Element_in_an_Array {
 	}
 }
 
+// Step-by-step explanation:
+// pq.peek() gives the smallest element in the heap (because it's a Min Heap).
+// If nums[i] (current element) is greater than pq.peek(), it means nums[i]
+// should be in the top k largest elements.
+// But the heap already has k elements, so we remove the smallest element
+// (poll()).
+// Then, we add nums[i] (add(nums[i])), ensuring that the heap always contains
+// the k largest elements so far.
