@@ -13,7 +13,7 @@ public class Heap {
 	}
 
 	// In a Min-Heap, the parent node should always be smaller than its child nodes.
-	// ✔ upheapify moves an inserted element upward until the Min-Heap property is
+	// upheapify moves an inserted element upward until the Min-Heap property is
 	// restored.
 	private void upheapify(int ci) {
 		// TODO Auto-generated method stub
