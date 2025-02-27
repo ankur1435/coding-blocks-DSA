@@ -3,16 +3,21 @@ package Lec37;
 import java.util.ArrayList;
 
 public class Heap {
+	// ArrayList can hold only objects, so we have to use Integer instead of int
 	private ArrayList<Integer> ll = new ArrayList<>();
 
 	public void add(int item) {
 		ll.add(item);
-		upheapify(ll.size() - 1);
+		upheapify(ll.size() - 1);// doing this because of zero baseed indx Of array as new element is added at
+									// last of arraylist
 	}
 
+	// In a Min-Heap, the parent node should always be smaller than its child nodes.
+	// ✔ upheapify moves an inserted element upward until the Min-Heap property is
+	// restored.
 	private void upheapify(int ci) {
 		// TODO Auto-generated method stub
-		int pi = (ci - 1) / 2;
+		int pi = (ci - 1) / 2;// find the parent index
 		if (ll.get(pi) > ll.get(ci)) {
 			swap(pi, ci);
 			upheapify(pi);
@@ -34,11 +39,11 @@ public class Heap {
 	}
 
 	public int remove() {
-		swap(0, ll.size() - 1);
+		swap(0, ll.size() - 1);// removng the last element and swapping it with the root element becuase
+								// removing the root element will in O(1) time
 		int rv = ll.remove(ll.size() - 1);
 		downheapify(0);
 		return rv;
-
 	}
 
 	private void downheapify(int pi) {
@@ -68,3 +73,7 @@ public class Heap {
 	}
 
 }
+
+// In a heap, elements keep changing dynamically (insertions & deletions). Since
+// ArrayList resizes automatically, it is an ideal choice for implementing a
+// dynamic Min-Heap
