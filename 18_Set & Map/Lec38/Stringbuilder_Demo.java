@@ -4,8 +4,9 @@ public class Stringbuilder_Demo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		StringBuilder sb = new StringBuilder();
-		System.out.println(sb.capacity());
+		// StringBuilder class in Java, which is used for mutable (modifiable) strings.
+		StringBuilder sb = new StringBuilder();// By default, it has an initial capacity of 16 characters.
+		System.out.println(sb.capacity());// If capacity is exceeded, it doubles to (old capacity * 2) + 2.
 		sb.append("Raj");
 		sb.append('a');
 		sb.append(10);
