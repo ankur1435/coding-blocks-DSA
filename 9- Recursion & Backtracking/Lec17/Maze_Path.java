@@ -3,10 +3,10 @@ package Lec17;
 public class Maze_Path {
 
 	public static void main(String[] args) {
-
+ 
 		// TODO Auto-generated method stub
-		int n = 3;
-		int m = 4;// matrix n*m
+		int n = 2;
+		int m = 2;// matrix n*m
 		Print(n - 1, m - 1, 0, 0, "");
 	}
 

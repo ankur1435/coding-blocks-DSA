@@ -23,7 +23,7 @@ public class Count_SubSequnce {
 		char ch = ques.charAt(0);
 		int x = Count(ques.substring(1), ans);
 		int y = Count(ques.substring(1), ans + ch);
-		return x + y;
+		return x + y; 
 
 	}
 

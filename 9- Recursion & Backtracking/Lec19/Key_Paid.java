@@ -14,13 +14,12 @@ public class Key_Paid {
 		if (ques.length() == 0) {
 			System.out.println(ans);
 			return;
-		}
+		} 
 		char ch = ques.charAt(0);
 		int idx = ch - '0';
 		String press = keyboard[idx];
 		for (int i = 0; i < press.length(); i++) {
 			Print(ques.substring(1), ans + press.charAt(i));
-
 		}
 
 	}

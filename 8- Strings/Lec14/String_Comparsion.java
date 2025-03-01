@@ -1,6 +1,6 @@
 package Lec14;
 
-public class String_Compresion {
+public class String_Comparsion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

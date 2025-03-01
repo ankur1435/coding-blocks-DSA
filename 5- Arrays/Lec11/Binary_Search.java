@@ -18,7 +18,7 @@ public class Binary_Search {
 				hi = mid - 1;
 			} else {
 				lo = mid + 1;
-			}
+			} 
 		}
 		return -1;
 	}

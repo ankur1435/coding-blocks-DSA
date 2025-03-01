@@ -3,7 +3,7 @@ package Lec14;
 import java.util.Scanner;
 
 public class Playing_with_Good_String {
-
+ 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class ArraysList_Demo {
-
+ 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<Integer> ll = new ArrayList<>();
@@ -26,10 +26,11 @@ public class ArraysList_Demo {
 		System.out.println(ll);
 		System.out.println(ll.size());
 		ll.set(2, 19);
+		System.out.println(ll);
 		Collections.sort(ll);
+		System.out.println(ll);
 		Collections.reverse(ll);
 		System.out.println(ll);
-
 	}
 
 }

@@ -1,16 +1,16 @@
 package Lec18;
 
-import java.util.*;
+import java.util.*; 
 
-
-public class Lexicographical_Numbers {
+ 
+public class Lexicographical_Numbers { 
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 1000;
+		int n = 10;
 		List<Integer> ll = new ArrayList<>();
 		Lexicographical(n, 0,ll);
-		System.out.println(ll);
+		// System.out.println(ll);
 
 	}
 
@@ -19,13 +19,12 @@ public class Lexicographical_Numbers {
 		if (curr > n) {
 			return;
 		}
-	//	System.out.println(curr);
-		ll.add(curr);
-		int i = 0;
-		if (curr == 0) {
-			i = 1;
+		if (curr != 0) {
+			System.out.println(curr);
 		}
-		for (; i <= 9; i++) {
+		// ll.add(curr);
+
+		for (int i = (curr == 0 ? 1 : 0); i <= 9; i++) {
 			Lexicographical(n, curr * 10 + i,ll);
 		}
 
