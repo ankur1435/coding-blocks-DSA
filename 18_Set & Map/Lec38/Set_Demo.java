@@ -17,13 +17,13 @@ public class Set_Demo {
 		set.add(1);
 		System.out.println(set);
 		// contains
-//		System.out.println(set.contains(109));
-//		System.out.println(set.contains(1));
-//		System.out.println(set.size());
-//		for (int v : set) {
-//			System.out.print(v + " ");
-//		}
-//		System.out.println();
+		// System.out.println(set.contains(109));
+		// System.out.println(set.contains(1));
+		// System.out.println(set.size());
+		// for (int v : set) {
+		// System.out.print(v + " ");
+		// }
+		// System.out.println();
 		TreeSet<Integer> set1 = new TreeSet<>();
 		set1.add(2);
 		set1.add(21);
@@ -50,12 +50,3 @@ public class Set_Demo {
 	}
 
 }
-
-
-
-
-
-
-
-
-

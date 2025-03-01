@@ -34,7 +34,3 @@ public class Intersection_of_Two_Arrays_II {
 		return ans;
 	}
 }
-
-
-
-
