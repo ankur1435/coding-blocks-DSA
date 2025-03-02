@@ -7,6 +7,8 @@ public class HashMap<K, V> {
 	class Node {
 		K Key;
 		V value;
+		// This means that K (Key) and V (Value) can be replaced with any data type when
+		// creating an instance of HashMap.
 		Node next;
 	}
 
@@ -18,6 +20,8 @@ public class HashMap<K, V> {
 		this(4);
 	}
 
+	// a Constructor that takes an integer as an argument and creates an ArrayList
+	// of size n
 	public HashMap(int n) {
 		// TODO Auto-generated constructor stub
 		bukt = new ArrayList<>();
@@ -26,10 +30,14 @@ public class HashMap<K, V> {
 		}
 	}
 
+	// example:
+	// HashMap<String, Integer> map = new HashMap<>(5);
+	// Creates a HashMap with 5 empty buckets
+
 	public int hashfun(K key) {
 		int idx = key.hashCode() % bukt.size();
 		if (idx < 0) {
-			idx += bukt.size();
+			idx += bukt.size();// If the index is negative, we make it positive by adding the bucket size
 		}
 		return idx;
 	}
@@ -75,15 +83,16 @@ public class HashMap<K, V> {
 		}
 
 	}
+
 	public String toString() {
-		String s="{";
+		String s = "{";
 		for (Node temp : bukt) {
 			while (temp != null) {
-				s= s+ temp.Key+"="+temp.value+", ";
+				s = s + temp.Key + "=" + temp.value + ", ";
 				temp = temp.next;
 			}
 		}
-		return s+"}";
+		return s + "}";
 
 	}
 
