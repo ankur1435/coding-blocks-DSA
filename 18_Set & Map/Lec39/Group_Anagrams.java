@@ -36,9 +36,16 @@ public class Group_Anagrams {
 			freq[ch - 'a']++;
 		}
 		for (int i = 0; i < freq.length; i++) {
-			sb.append(freq[i]+" ");
+			sb.append(freq[i] + " ");
 		}
 		return sb.toString();
 	}
 
 }
+
+// Key Features of a List
+// ✅ Ordered Collection → Elements maintain their insertion order.
+// ✅ Allows Duplicates → You can store the same element multiple times.
+// ✅ Dynamic Size → Unlike arrays, lists can grow and shrink dynamically.
+// ✅ Indexed Access → Elements can be accessed using their index
+// (list.get(index)).
