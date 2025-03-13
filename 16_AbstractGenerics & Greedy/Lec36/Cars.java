@@ -21,11 +21,11 @@ public class Cars {// implements Comparable<Cars> {
 
 	}
 
-//	@Override
-//	public int compareTo(Cars o) {
-//		// TODO Auto-generated method stub
-//		//return this.price-o.price;
-//		//return o.speed-this.speed;
-//		return this.color.compareTo(o.color);
-//	}
+	// @Override
+	// public int compareTo(Cars o) {
+	// // TODO Auto-generated method stub
+	// //return this.price-o.price;
+	// //return o.speed-this.speed;
+	// return this.color.compareTo(o.color);
+	// }
 }
