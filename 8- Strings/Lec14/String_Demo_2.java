@@ -7,8 +7,8 @@ public class String_Demo_2 {
 		System.out.println("hello" + 10 + 20 + "bye");
 		System.out.println("hello" + (10 + 20) + "bye");
 		System.out.println(10 + 20 + "hello" + "bye");
-		String s1 = "hello";
-		String s2 = new String("hello");
+		String s1 = "hello"; // Stored in the String Pool (reused if already exists)
+		String s2 = new String("hello"); // Creates a new object in Heap (not in String Pool)
 		System.out.println(s1 == s2);
 		int a1 = 9;
 		int a2 = 9;
@@ -17,7 +17,7 @@ public class String_Demo_2 {
 		System.out.println(len);
 		int[] arr = new int[4];
 		int l = arr.length;
-        System.out.println(l);
+		System.out.println(l);
 	}
 
 }
