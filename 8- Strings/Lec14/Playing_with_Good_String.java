@@ -3,7 +3,7 @@ package Lec14;
 import java.util.Scanner;
 
 public class Playing_with_Good_String {
- 
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -24,7 +24,8 @@ public class Playing_with_Good_String {
 			}
 
 		}
-		// we are writting upcoming code because if the last element character became vowel so the first Math.max check would not be impliment (use)
+		// we are writting upcoming code because if the last element character became
+		// vowel so the first Math.max check would not be impliment
 		ans = Math.max(ans, c);
 		return ans;
 
