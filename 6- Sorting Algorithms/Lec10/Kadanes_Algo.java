@@ -15,6 +15,8 @@ public class Kadanes_Algo {
 		for (int i = 0; i < arr.length; i++) {
 			sum += arr[i];
 			ans = Math.max(ans, sum);
+			// if sum will be as it is (in negative) then adding anything in a negative
+			// number resulting negative number only
 			if (sum < 0) {
 				sum = 0;
 			}
