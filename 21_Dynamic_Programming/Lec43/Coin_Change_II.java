@@ -1,5 +1,3 @@
-package Lec43;
-
 import java.util.Arrays;
 
 public class Coin_Change_II {
@@ -18,7 +16,7 @@ public class Coin_Change_II {
 	}
 
 	public static int Coin_Change(int[] coin, int amount) {
-		int[][] dp = new int[coin.length+1][amount + 1];
+		int[][] dp = new int[coin.length + 1][amount + 1];
 		for (int i = 0; i < dp.length; i++) {
 			dp[i][0] = 1;
 		}
