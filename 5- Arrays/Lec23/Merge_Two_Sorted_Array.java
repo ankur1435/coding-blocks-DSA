@@ -32,7 +32,7 @@ public class Merge_Two_Sorted_Array {
 			i++;
 			k++;
 		}
-		while (j < m) { // fff
+		while (j < m) {
 			ans[k] = arr2[j];
 			j++;
 			k++;
