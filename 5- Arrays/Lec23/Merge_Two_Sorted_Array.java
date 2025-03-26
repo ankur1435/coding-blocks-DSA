@@ -4,7 +4,7 @@ public class Merge_Two_Sorted_Array {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr1 = { 2, 3, 5, 7, 8 };// ddlkf
+		int[] arr1 = { 2, 3, 5, 7, 8 };
 		int[] arr2 = { 1, 3, 5, 8, 9, 11, 13 };
 		int[] ans = Merge(arr1, arr2);
 		for (int i = 0; i < ans.length; i++) {
