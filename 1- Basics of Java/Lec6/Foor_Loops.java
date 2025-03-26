@@ -15,5 +15,5 @@ public class Foor_Loops {
 			System.out.println(i);
 		}
 	}
-
+ 
 }
