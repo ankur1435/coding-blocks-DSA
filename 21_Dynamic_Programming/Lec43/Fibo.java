@@ -1,4 +1,4 @@
-package Lec43;
+// package Lec43;
 
 public class Fibo {
 
@@ -9,15 +9,17 @@ public class Fibo {
 		System.out.println(fibTD(n, dp));
 
 	}
+
 	public static int fibBU(int n) {
 		int[] dp = new int[n + 1];
-		dp[0]=0;
-		dp[1]=1;
+		dp[0] = 0;
+		dp[1] = 1;
 		for (int i = 2; i < dp.length; i++) {
-			dp[i]=dp[i-1]+dp[i-2];
+			dp[i] = dp[i - 1] + dp[i - 2];
 		}
-		return dp[dp.length-1];
+		return dp[dp.length - 1];
 	}
+
 	public static int fibTD(int n, int[] dp) {
 		if (n == 0 || n == 1) {
 			return n;

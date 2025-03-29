@@ -1,4 +1,4 @@
-package Lec43;
+// package Lec43;
 
 import java.util.Arrays;
 
@@ -10,9 +10,9 @@ public class House_Robber {
 		System.out.println(Robber(arr, 0));
 		int[] dp = new int[arr.length];
 		Arrays.fill(dp, -1);
-//		for (int i = 0; i < dp.length; i++) {
-//			dp[i]=-1;
-//		}
+		// for (int i = 0; i < dp.length; i++) {
+		// dp[i]=-1;
+		// }
 		System.out.println(RobberTD(arr, 0, dp));
 	}
 

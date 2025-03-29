@@ -1,4 +1,4 @@
-package Lec43;
+// package Lec43;
 
 public class Knapsack_Zero_One {
 

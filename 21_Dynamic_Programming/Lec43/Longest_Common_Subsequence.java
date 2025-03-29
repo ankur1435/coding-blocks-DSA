@@ -1,4 +1,4 @@
-package Lec43;
+// package Lec43;
 
 import java.util.Arrays;
 
@@ -30,7 +30,7 @@ public class Longest_Common_Subsequence {
 				}
 			}
 		}
-		return dp[dp.length-1][dp[0].length-1];
+		return dp[dp.length - 1][dp[0].length - 1];
 	}
 
 	public static int LCS(String str1, String str2, int i, int j, int[][] dp) {
