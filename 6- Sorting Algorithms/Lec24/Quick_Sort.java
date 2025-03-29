@@ -1,6 +1,6 @@
-package Lec24;
+package Lec24; 
 
-public class Quick_Sort {
+public class Quick_Sort {  
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,7 +9,7 @@ public class Quick_Sort {
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i]+" ");
 		}
-	}
+	}   
 
 	public static void Sort(int[] arr, int si, int ei) {
 		if (si >= ei) {
