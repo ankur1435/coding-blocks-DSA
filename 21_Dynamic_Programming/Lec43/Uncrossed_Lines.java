@@ -1,6 +1,6 @@
 // package Lec43;  
 
-public class Uncrossed_Lines {
+public class Uncrossed_Lines {/njnvnibhv
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
