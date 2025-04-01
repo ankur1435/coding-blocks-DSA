@@ -1,8 +1,8 @@
 package Lec29;
-
+ 
 // Wildcard import: import Lec26.*; (imports all classes in the Lec26 package)
 import Lec26.Queue; // You can access a public class from anywhere, but you still need to use import to tell Java where to find the class if it's in a different package
-
+ 
 public class DynamicQueue extends Queue {
 	@Override
 	public void Enqueue(int item) throws Exception {

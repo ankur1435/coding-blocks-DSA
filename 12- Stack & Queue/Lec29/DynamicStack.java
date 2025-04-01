@@ -1,6 +1,6 @@
 package Lec29;
 
-import Lec26.Stack;
+import Lec26.Stack; 
 
 public class DynamicStack extends Stack {
 
