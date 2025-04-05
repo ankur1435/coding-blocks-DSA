@@ -1,4 +1,4 @@
-package Lec2;
+ package Lec2;
 
 public class Maximum_of_2_Number {
 
