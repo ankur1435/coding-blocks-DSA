@@ -1,4 +1,4 @@
-package Lec36;
+package Lec36; 
  
 public class Cars {// implements Comparable<Cars> {
 	int price;
