@@ -2,7 +2,7 @@ package Lec36;
      
 public class Cars {// implements Comparable<Cars> {
 	int price;
-	int speed;
+	int speed; 
 	String color;
 
 	public Cars() {
