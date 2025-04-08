@@ -8,7 +8,7 @@ public class Cars {// implements Comparable<Cars> {
 	public Cars() {
 		// TODO Auto-generated constructor stub
 	}
-
+ 
 	public Cars(int price, int speed, String color) {
 		// TODO Auto-generated constructor stub
 		this.price = price;
