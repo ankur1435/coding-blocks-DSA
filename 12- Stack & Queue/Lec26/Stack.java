@@ -5,7 +5,7 @@ public class Stack {
 	protected int[] arr;
 	// Tracks the topmost element of the stack.
 	// Initialized to -1 because an empty stack has no valid index.
-	private int idx = -1; // ji
+	private int idx = -1;
 
 	public Stack(int n) {
 		// TODO Auto-generated constructor stub
