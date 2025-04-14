@@ -1,14 +1,14 @@
-package Lec36;
-
+package Lec36; 
+     
 public class Cars {// implements Comparable<Cars> {
 	int price;
-	int speed;
+	int speed; 
 	String color;
 
 	public Cars() {
 		// TODO Auto-generated constructor stub
 	}
-
+ 
 	public Cars(int price, int speed, String color) {
 		// TODO Auto-generated constructor stub
 		this.price = price;
