@@ -12,7 +12,7 @@ public class Reverse_Array_Range {
 
 	public static void Reverse(int[] arr, int i, int j) {
 		while (i < j) {
-			int temp = arr[i];
+			int temp = arr[i];// here officially i am changing the values by references
 			arr[i] = arr[j];
 			arr[j] = temp;
 			i++;
