@@ -1,13 +1,13 @@
 package Lec12;
- 
+
 public class Wave_Parint {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[][] arr = { 
-			{ 2, 1, 3, 4 }, 
-			{ 5, 6, 8, 7 }, 
-			{ 12, 56, 78, 9 } 
+		int[][] arr = {
+				{ 2, 1, 3, 4 },
+				{ 5, 6, 8, 7 },
+				{ 12, 56, 78, 9 }
 		};
 		print(arr);
 	}
