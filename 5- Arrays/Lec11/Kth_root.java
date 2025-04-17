@@ -14,7 +14,7 @@ public class Kth_root {
 		int lo = 1;
 		int hi = n;
 		int ans = 0;
-		while (lo <= hi) {
+		while (lo <= hi) {// lo <= hi ensures that you check the last element when lo equals hi.
 			int mid = (lo + hi) / 2;
 			if (Math.pow(mid, k) <= n) {
 				// we are updating ans here and modifying lo because if we find this if check

@@ -37,7 +37,7 @@ public class Aggressive_cows {
 		}
 		return ans;
 	}
-
+ 
 	public static boolean isitpossible(int[] stall, int noc, int mid) {
 		// TODO Auto-generated method stub
 		int pos = stall[0];

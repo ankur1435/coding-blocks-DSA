@@ -36,3 +36,7 @@ public class Search_in_Rotated_Sorted_Array {
 	}
 
 }
+
+// Use <= and >= when you're checking ranges that include lo and hi, and use <
+// or > when you've already handled the == case and just want to shift
+// boundaries.
