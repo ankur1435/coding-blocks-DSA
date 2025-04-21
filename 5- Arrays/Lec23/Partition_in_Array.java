@@ -27,3 +27,12 @@ public class Partition_in_Array {
 		return idx;
 	}
 }
+
+// We're looping and pushing all smaller elements to the left side, starting
+// from si.
+
+// idx tracks where the next smaller element should go.
+
+// After the loop ends:
+
+// idx is the first index where pivot should be placed.
