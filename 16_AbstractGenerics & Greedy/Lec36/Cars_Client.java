@@ -1,7 +1,7 @@
-package Lec36;
+package Lec36; 
 
 import java.util.*;
-
+ 
 public class Cars_Client {
 
 	public static void main(String[] args) {
