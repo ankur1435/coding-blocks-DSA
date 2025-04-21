@@ -2,7 +2,7 @@ package Lec23;
 
 public class Partition_in_Array {
 
-	public static void main(String[] args) {// ijeoihge
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 5, 7, 2, 1, 8, 3, 4 };
 		System.out.println(Partition(arr, 0, arr.length - 1));
