@@ -22,7 +22,9 @@ public class Partition_in_Array {
 			}
 		}
 		int temp = arr[ei];// doing this becuase Everything before idx is smaller than pivot so that
-							// placing pivot on idx
+							// placing pivot on idx idx tak hi smaller elements honge tabhi ham log exactly
+							// idx per pivot ko rakh rahe h taki elements left sare chhote ho and right me
+							// sare bade pivot ke
 		arr[ei] = arr[idx];
 		arr[idx] = temp;
 		return idx;
