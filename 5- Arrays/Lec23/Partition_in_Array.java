@@ -21,7 +21,8 @@ public class Partition_in_Array {
 				idx++;
 			}
 		}
-		int temp = arr[ei];// doing this becuase Everything before idx is smaller than pivot
+		int temp = arr[ei];// doing this becuase Everything before idx is smaller than pivot so that
+							// placing pivot on idx
 		arr[ei] = arr[idx];
 		arr[idx] = temp;
 		return idx;
