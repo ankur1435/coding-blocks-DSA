@@ -12,7 +12,7 @@ public class Partition_in_Array {
 	}
 
 	public static int Partition(int[] arr, int si, int ei) {
-		int val = arr[ei], idx = si;
+		int val = arr[ei], idx = si;// idx is the pointer that tells: "Next spot to place a smaller element"
 		for (int i = si; i < ei; i++) {
 			if (arr[i] < val) {
 				int temp = arr[i];
@@ -21,7 +21,7 @@ public class Partition_in_Array {
 				idx++;
 			}
 		}
-		int temp = arr[ei];
+		int temp = arr[ei];// doing this becuase Everything before idx is smaller than pivot
 		arr[ei] = arr[idx];
 		arr[idx] = temp;
 		return idx;
