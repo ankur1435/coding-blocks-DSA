@@ -28,7 +28,7 @@ public class Sudoku_Solver {
 			row++;
 			col = 0;
 		}
-		if (row == 9) {
+		if (row == 9) {//
 			return true;
 		}
 		if (grid[row][col] != 0) {
