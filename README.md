@@ -36,7 +36,7 @@ The primary objectives of this repository are:
 3. Explore the solutions and understand the implementations.
 4. Run the Java files to test the solutions.
 
-## 🤝 Contributing   ;
+## 🤝 Contributing   
 While this is primarily my learning repository, feel free to fork it, suggest improvements, or open issues if you find bugs or areas for enhancement!
 
 ## 📢 Let's Connect!
