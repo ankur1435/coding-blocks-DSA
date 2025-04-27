@@ -1,4 +1,4 @@
-package Lec6;  
+package Lec6;   
 
 public class Data_Type_Demo {
 	public static void main(String[] args) {
