@@ -1,5 +1,5 @@
 package Lec2;
-
+ 
 public class Lottery_Game {
 
 	public static void main(String[] args) {
