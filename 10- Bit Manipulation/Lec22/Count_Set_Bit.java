@@ -1,4 +1,4 @@
-package Lec22;b
+package Lec22;
 
 public class Count_Set_Bit {
 
