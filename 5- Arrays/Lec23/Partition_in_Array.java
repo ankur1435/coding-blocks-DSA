@@ -25,7 +25,7 @@ public class Partition_in_Array {
 							// placing pivot on idx idx tak hi smaller elements honge tabhi ham log exactly
 							// idx per pivot ko rakh rahe h taki elements left sare chhote ho and right me
 							// sare bade pivot ke
-		arr[ei] = arr[idx];
+		arr[ei] = arr[idx]; 
 		arr[idx] = temp;
 		return idx;
 	}

@@ -1,15 +1,15 @@
-package Lec24; 
+package Lec24;
 
-public class Quick_Sort {  
+public class Quick_Sort {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 5, 7, 2, 1, 8, 3, 4 };
-		Sort(arr, 0, arr.length-1);
+		Sort(arr, 0, arr.length - 1);
 		for (int i = 0; i < arr.length; i++) {
-			System.out.print(arr[i]+" ");
+			System.out.print(arr[i] + " ");
 		}
-	}   
+	}
 
 	public static void Sort(int[] arr, int si, int ei) {
 		if (si >= ei) {
