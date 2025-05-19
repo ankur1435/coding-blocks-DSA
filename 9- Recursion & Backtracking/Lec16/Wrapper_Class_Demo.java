@@ -24,33 +24,20 @@ public class Wrapper_Class_Demo {
 		Integer c4 = 178;
 		System.out.println(c1 == c2);
 		System.out.println(c3 == c4);
-		Character ch2='z';
-		Character ch3='z';
-		System.out.println(ch2==ch3);
-		Boolean b4=false;
-		Boolean b5=false;
-		System.out.println(b4==b5);
-		
+		Character ch2 = 'z';
+		Character ch3 = 'z';
+		System.out.println(ch2 == ch3);
+		Boolean b4 = false;
+		Boolean b5 = false;
+		System.out.println(b4 == b5);
 
 	}
 
 }
-// Java caches Integer objects for values between -128 and 127. 
+// Java caches Integer objects for values between -128 and 127.
 // The Long class caches values between -128 and 127, similar to Integer
 // No caching for Double or Float values.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 🤔 Why do we need wrappers?
+// Because Java collections (like ArrayList, HashMap) only work with objects,
+// not primitive types.

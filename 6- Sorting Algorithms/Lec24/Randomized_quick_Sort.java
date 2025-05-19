@@ -3,7 +3,6 @@ package Lec24;
 import java.util.Random;
 
 public class Randomized_quick_Sort {
-mrog
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = { 5, 7, 2, 1, 8, 3, 4 };
@@ -20,7 +19,6 @@ mrog
 		int idx = Partition(arr, si, ei);
 		Sort(arr, si, idx - 1);
 		Sort(arr, idx + 1, ei);
-
 	}
 
 	public static int Partition(int[] arr, int si, int ei) {
@@ -39,6 +37,7 @@ mrog
 				idx++;
 			}
 		}
+
 		int temp = arr[ei];
 		arr[ei] = arr[idx];
 		arr[idx] = temp;
