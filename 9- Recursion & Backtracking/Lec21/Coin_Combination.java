@@ -4,7 +4,7 @@ public class Coin_Combination {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] coin = { 2,3,6,7};
+		int[] coin = { 2, 3, 6, 7 };
 		int amount = 7;
 		Combination(coin, amount, "", 0);
 

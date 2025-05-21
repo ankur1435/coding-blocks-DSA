@@ -14,7 +14,7 @@ public class SubSequnce {
 			System.out.println(ans);
 			return;
 		}
-		char ch = ques.charAt(0);
+		char ch = ques.charAt(0);// removes the first character (using substring(1))
 		print(ques.substring(1), ans);
 		print(ques.substring(1), ans + ch);
 

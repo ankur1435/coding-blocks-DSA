@@ -3,17 +3,17 @@ package Lec17;
 public class Maze_Path {
 
 	public static void main(String[] args) {
- 
+
 		// TODO Auto-generated method stub
 		int n = 2;
 		int m = 2;// matrix n*m
 		Print(n - 1, m - 1, 0, 0, "");
 	}
 
-// er --> end row
-// ec --> end col
-// cr --> current row
-// cc --> current col	
+	// er --> end row
+	// ec --> end col
+	// cr --> current row
+	// cc --> current col
 	public static void Print(int er, int ec, int cr, int cc, String ans) {
 		// TODO Auto-generated method stub
 		if (cc == ec && cr == er) {

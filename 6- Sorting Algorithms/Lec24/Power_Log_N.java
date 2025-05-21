@@ -15,7 +15,7 @@ public class Power_Log_N {
 			return 1;
 		}
 		int ans = pow(a, n / 2);
-		ans = ans * ans;
+		ans = ans * ans;//
 		if (n % 2 != 0) {
 			ans *= a;
 		}

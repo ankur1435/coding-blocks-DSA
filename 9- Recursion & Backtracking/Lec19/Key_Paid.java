@@ -14,7 +14,7 @@ public class Key_Paid {
 		if (ques.length() == 0) {
 			System.out.println(ans);
 			return;
-		} 
+		}
 		char ch = ques.charAt(0);
 		int idx = ch - '0';
 		String press = keyboard[idx];

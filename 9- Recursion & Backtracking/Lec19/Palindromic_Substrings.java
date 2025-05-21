@@ -10,7 +10,7 @@ public class Palindromic_Substrings {
 	}
 
 	public static int Axis_Orbit(String s) {
-		// odd 
+		// odd
 		int odd = 0;
 		for (int axis = 0; axis < s.length(); axis++) {
 			for (int orbit = 0; axis - orbit >= 0 && axis + orbit < s.length(); orbit++) {
@@ -18,7 +18,7 @@ public class Palindromic_Substrings {
 					break;
 				}
 				odd++;
-			} 
+			}
 		}
 		// even
 		int even = 0;
@@ -30,7 +30,7 @@ public class Palindromic_Substrings {
 				even++;
 			}
 		}
-		return even+odd;
+		return even + odd;
 	}
 
 }
