@@ -1,8 +1,8 @@
 package Lec26;
 
-public class Stack_Client  {
- 
-	public static void main(String[] args)throws Exception {
+public class Stack_Client {
+
+	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		Stack st = new Stack();
 		st.push(10);

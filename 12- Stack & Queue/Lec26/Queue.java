@@ -35,7 +35,6 @@ public class Queue {
 		}
 		// Instead of using front + size, you can directly use size % arr.length to find
 		// the correct index for the new element, because: front is always 0
-		//
 		int idx = (front + size) % arr.length;
 		// isko aisa samgho ki size 0 se start ho rahi h 1 se nahi ho rahi h issiliye
 		// ham size ko leke chal rahe h because of zero based indexing size hamesha agle
