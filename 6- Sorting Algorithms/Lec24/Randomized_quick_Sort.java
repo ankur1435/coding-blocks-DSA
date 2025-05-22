@@ -44,3 +44,13 @@ public class Randomized_quick_Sort {
 		return idx;
 	}
 }
+
+// ✅ How Randomized Quick Sort Works:
+// 🔁 Steps:
+// Pick a random index between low and high.
+
+// Swap that element with the last element.
+
+// Now run normal partition logic with this random pivot.
+
+// Recursively sort left and right parts.
