@@ -29,7 +29,8 @@ public class Student {
 	public void setAge(int age) {
 		try {
 			if (age < 0) {
-				throw new Exception("bklol age -ve nhi hoga");
+				throw new Exception("bklol age -ve nhi hoga");// throw = stops everything (serious error), println() =
+																// just talks, program continues.
 
 			}
 			this.age = age;

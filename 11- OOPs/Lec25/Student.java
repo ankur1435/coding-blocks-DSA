@@ -27,6 +27,7 @@ public class Student {
 	// any instance-specific data (like the name or age instance variables). So, it
 	// makes sense to make it static because it's tied to the class itself, not to
 	// any particular object.
+
 	static {
 		System.out.println("I am in Static  Block");
 	}
