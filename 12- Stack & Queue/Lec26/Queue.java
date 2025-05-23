@@ -91,3 +91,5 @@ public class Queue {
 		// not stored in the natural order of indices 0, 1, 2.
 	}
 }
+
+// front + size ki value rear ke barabar hoti h jaha naye element ko dalna h
