@@ -1,4 +1,4 @@
-package Lec25;  
+package Lec25;   
 
 public class Person_Client {
 	public static void main(String[] args) {
